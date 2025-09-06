@@ -25,7 +25,7 @@ from typing import Dict, Any, Optional
 import requests
 import json
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 # Configure logging
 logging.basicConfig(
