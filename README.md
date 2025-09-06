@@ -37,18 +37,24 @@ AI Agent (Claude Code) ----MCP over network----> hexstrike_mcp_server.py:8889
 
 ### Installation
 
-1. **Install dependencies:**
+1. **Download this MCP server:**
 ```bash
-pip install requests fastmcp
+git clone https://github.com/b-bogus/hexstrike-ai_mcp_server.git
+cd hexstrike-ai_mcp_server
 ```
 
-2. **Start HexStrike Flask API** (on same machine):
+2. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Start HexStrike Flask API** (on same machine):
 ```bash
 # Download and run HexStrike AI from https://github.com/0x4m4/hexstrike-ai
 python3 hexstrike_server.py
 ```
 
-3. **Start the MCP server:**
+4. **Start the MCP server:**
 ```bash
 python3 hexstrike_mcp_server.py --host 0.0.0.0 --port 8889
 ```
