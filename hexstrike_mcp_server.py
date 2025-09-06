@@ -421,8 +421,8 @@ def main():
     logger.info(f"{HexStrikeColors.YELLOW}🔗 API Backend: {args.api_url}{HexStrikeColors.RESET}")
     logger.info(f"{HexStrikeColors.MAGENTA}⚡ Configure Claude Code to connect to: http://{args.host}:{args.port}{HexStrikeColors.RESET}")
     
-    # Run the MCP server
-    mcp.run(host=args.host, port=args.port)
+    # Run the MCP server with SSE transport
+    mcp.run(transport="sse", host=args.host, port=args.port)
 
 if __name__ == "__main__":
     main()
