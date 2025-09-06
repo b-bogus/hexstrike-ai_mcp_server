@@ -1,0 +1,15 @@
+# HexStrike AI MCP Server Dependencies
+# 
+# Core MCP server dependencies for network-accessible security tools
+#
+# Installation:
+# pip install -r requirements.txt
+
+# MCP Framework
+fastmcp>=0.2.0,<1.0.0           # FastMCP framework for MCP server functionality
+
+# HTTP Communication  
+requests>=2.31.0,<3.0.0         # HTTP library for communicating with HexStrike Flask API
+
+# Optional: Enhanced logging and monitoring
+psutil>=5.9.0,<6.0.0            # System monitoring (if needed for advanced telemetry)
